@@ -2,6 +2,8 @@
 import dynamic from "next/dynamic";
 import { usePathname } from "next/navigation";
 import { Header } from "./Header";
+import { MobileBottomNav } from "./MobileBottomNav";
+import { MobileFloatingCart } from "./MobileFloatingCart";
 
 const Footer = dynamic(() => import("./Footer").then((m) => m.Footer));
 const WhatsAppBanner = dynamic(() => import("@/components/main/WhatsAppBanner").then((m) => m.WhatsAppBanner));
@@ -30,6 +32,8 @@ export function Layout({ children }: LayoutProps) {
       {!isAdmin && <WhatsAppFloatingButton />}
       {!isAdmin && <Footer />}
       {!isAdmin && <MobileMarquee />}
+      {!isAdmin && <MobileBottomNav />}
+      {!isAdmin && <MobileFloatingCart />}
     </div>
   );
 }

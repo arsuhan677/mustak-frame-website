@@ -121,7 +121,7 @@ export function Header() {
 
   return (
     <header
-      className={`sticky top-0 z-50 w-full transition-all duration-300 bg-background/95 backdrop-blur-md border-b border-border/20 ${isScrolled ? "shadow-md" : ""
+      className={`relative md:sticky top-0 z-50 w-full transition-all duration-300 bg-background/95 backdrop-blur-md border-b border-border/20 ${isScrolled ? "shadow-md" : ""
         }`}
     >
       {/* Main Header Container */}
