@@ -30,6 +30,7 @@ import {
   ShieldCheck,
   ShoppingBag,
   Star,
+  Store,
   Truck,
   Zap,
 } from "lucide-react";
@@ -975,17 +976,13 @@ export default function ProductDetailsClient() {
       {isMobile && product && (
         <div className="fixed bottom-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-md border-t border-border/80 p-3 pb-[calc(0.75rem+env(safe-area-inset-bottom))] md:hidden shadow-lg">
           <div className="flex items-center gap-2 max-w-md mx-auto">
-            {whatsappEnabled && (
-              <a
-                href={`https://wa.me/${storeSettings!.whatsapp_number.replace(/[^0-9]/g, "")}?text=${encodeURIComponent(`Hi, I want to order:\n\n*${product.name}*\nPrice: ${formatCurrency(effectivePrice)}\nQuantity: ${quantity}${selectedVariant ? `\nVariant: ${[selectedVariant.size, selectedVariant.color].filter(Boolean).join(" / ")}` : ""}\n\nPlease confirm my order.`)}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="h-12 w-12 shrink-0 flex items-center justify-center bg-[#25D366] text-white rounded-xl"
-                aria-label="Order on WhatsApp"
-              >
-                <MessageCircle className="h-5 w-5 fill-white" />
-              </a>
-            )}
+            <Link
+              href="/shop"
+              className="h-12 w-12 shrink-0 flex items-center justify-center bg-secondary/80 text-foreground hover:bg-secondary rounded-xl border border-border/80 transition-colors"
+              aria-label="Go to Shop"
+            >
+              <Store className="h-5 w-5" />
+            </Link>
 
             <Button
               variant="outline"

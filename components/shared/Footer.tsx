@@ -86,7 +86,7 @@ export function Footer() {
   const fullAddress = [storeAddress, storeCity].filter(Boolean).join(", ");
 
   return (
-    <footer className="bg-foreground text-background border-t border-border/20 pt-12 pb-8">
+    <footer className="bg-foreground text-background border-t border-border/20 pt-12 pb-10 md:pb-8">
       <div className="container-shop">
         {/* Main Footer Columns */}
         <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12 pb-12">

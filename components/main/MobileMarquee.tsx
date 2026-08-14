@@ -25,7 +25,7 @@ export function MobileMarquee() {
   return (
     <>
       {/* Spacer to prevent overlapping page footer content */}
-      <div className="h-[44px] w-full flex-shrink-0" />
+      <div className="h-[44px] w-full flex-shrink-0 bg-foreground" />
 
       {/* Fixed Bottom Marquee Bar */}
       <div className="fixed bottom-0 left-0 w-full bg-[#1a1a2e] text-white py-2.5 overflow-hidden border-t border-white/10 z-40 shadow-lg">

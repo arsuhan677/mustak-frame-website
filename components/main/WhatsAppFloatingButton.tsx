@@ -24,7 +24,7 @@ export function WhatsAppFloatingButton() {
   const waUrl = `https://wa.me/${cleanNumber}${autoMessage ? `?text=${encodeURIComponent(autoMessage)}` : ""}`;
 
   return (
-    <div className="fixed bottom-14 right-6 z-[180] flex items-center gap-2 group">
+    <div className="fixed bottom-[85px] md:bottom-8 right-4 md:right-8 z-[180] flex items-center gap-2 group">
       {/* Tooltip text pill */}
       <span
         className={`px-3 py-1.5 bg-gray-900/90 text-white text-xs font-semibold rounded-full shadow-lg backdrop-blur-sm transition-all duration-300 pointer-events-none ${

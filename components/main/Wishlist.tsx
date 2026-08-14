@@ -75,7 +75,6 @@ export default function WishlistPage() {
           </p>
           <Link href="/shop">
             <Button className="bg-accent text-accent-foreground hover:opacity-90 font-bold px-8 h-12 rounded-xl text-sm shadow-sm transition-all flex items-center gap-2 mx-auto">
-              <Sparkles className="h-4 w-4" />
               <span>Explore Shop Catalog</span>
               <ArrowRight className="h-4 w-4 ml-1" />
             </Button>
