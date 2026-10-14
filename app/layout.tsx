@@ -18,7 +18,7 @@ const sora = Sora({
   weight: ["500", "600", "700", "800"],
 });
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://mustak-frame.vercel.app/";
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://nijum-bd.vercel.app/";
 export const viewport: Viewport = {
   themeColor: [
     { media: "(prefers-color-scheme: light)", color: "#faf9f7" },

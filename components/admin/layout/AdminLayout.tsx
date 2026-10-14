@@ -107,7 +107,11 @@ export function AdminLayout({ children }: Props) {
                 </Button>
               </SheetTrigger>
 
-              <SheetContent side="left" className="p-0 w-[280px]">
+              <SheetContent
+                side="left"
+                className="p-0 w-[280px] gap-0 h-full max-h-dvh overflow-hidden border-r"
+                showCloseButton={false}
+              >
                 <AdminSidebar mobile closeSidebar={() => setOpen(false)} />
               </SheetContent>
             </Sheet>
