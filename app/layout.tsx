@@ -84,7 +84,7 @@ export const metadata: Metadata = {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Suyeb Online Sports - Authentic Sports Gear & Clothing",
+        alt: "Nijumbd - Authentic frames & sunglasses",
         type: "image/png",
       },
     ],
