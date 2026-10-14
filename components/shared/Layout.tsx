@@ -24,16 +24,19 @@ export function Layout({ children }: LayoutProps) {
     pathname === "/shop" || 
     pathname?.startsWith("/product/");
 
+  const isLanding =
+    pathname?.startsWith("/landing/") || pathname?.startsWith("/lp/");
+
   return (
     <div className="min-h-screen flex flex-col">
-      {!isAdmin && <Header />}
+      {!isAdmin && !isLanding && <Header />}
       <main className="flex-1">{children}</main>
-      {!isAdmin && showBanner && <WhatsAppBanner />}
-      {!isAdmin && <WhatsAppFloatingButton />}
-      {!isAdmin && <Footer />}
-      {!isAdmin && <MobileMarquee />}
-      {!isAdmin && <MobileBottomNav />}
-      {!isAdmin && <MobileFloatingCart />}
+      {!isAdmin && !isLanding && showBanner && <WhatsAppBanner />}
+      {!isAdmin && !isLanding && <WhatsAppFloatingButton />}
+      {!isAdmin && !isLanding && <Footer />}
+      {!isAdmin && !isLanding && <MobileMarquee />}
+      {!isAdmin && !isLanding && <MobileBottomNav />}
+      {!isAdmin && !isLanding && <MobileFloatingCart />}
     </div>
   );
 }
