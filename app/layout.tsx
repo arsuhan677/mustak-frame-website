@@ -18,8 +18,7 @@ const sora = Sora({
   weight: ["500", "600", "700", "800"],
 });
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://suyeb-online-sports.vercel.app";
-
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://mustak-frame.vercel.app/";
 export const viewport: Viewport = {
   themeColor: [
     { media: "(prefers-color-scheme: light)", color: "#faf9f7" },
@@ -34,29 +33,28 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    template: "%s | Suyeb Online Sports",
-    default: "Suyeb Online Sports | Premium Sports Gear, Clothing & Accessories",
+    template: "%s | Nijumbd",
+    default: "Nijumbd | Premium frames & sunglasses",
   },
   description:
-    "Suyeb Online Sports is your ultimate online destination in Bangladesh for 100% authentic sports gear, custom jerseys, football kits, cricket equipment, athletic clothing, and fitness accessories. Fast nationwide shipping & best prices guaranteed.",
+    "Nijumbd is your ultimate online destination in Bangladesh for 100% authentic frames & sunglasses. Fast nationwide shipping & best prices guaranteed.",
   keywords: [
-    "Suyeb Online Sports",
-    "Suyeb Sports",
-    "Sports Shop Bangladesh",
-    "Online Sports Store BD",
-    "Custom Jersey Bangladesh",
-    "Football Jersey BD",
-    "Cricket Bats & Gear",
-    "Fitness Equipment Bangladesh",
-    "Athletic Wear BD",
-    "Gym Wear Bangladesh",
-    "Badminton Rackets BD",
-    "Sports Gear Shop",
+    "Nijumbd",
+    "Nijum frames",
+    "Nijum-frame-shop",
+    "Online frames shop BD",
+    "Nijumbd-BD",
+    "Nijumbd-BD",
+    "Nijumbd-BD",
+    "Nijumbd-BD",
+    "Nijumbd-BD",
+    "Nijumbd-BD",
+    "Nijumbd-BD",
   ],
-  authors: [{ name: "Suyeb Online Sports", url: siteUrl }],
+  authors: [{ name: "Nijumbd", url: siteUrl }],
   creator: "SoftZeniq IT",
-  publisher: "Suyeb Online Sports",
-  applicationName: "Suyeb Online Sports",
+  publisher: "Nijumbd",
+  applicationName: "Nijumbd",
   generator: "Next.js",
   referrer: "origin-when-cross-origin",
   category: "Sports & Recreation",
@@ -73,11 +71,11 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Suyeb Online Sports | Premium Sports Gear & Clothing",
+    title: "Nijumbd | Premium frames & sunglasses",
     description:
-      "Shop genuine sports equipment, custom team jerseys, athletic wear, and fitness accessories at Suyeb Online Sports. Fast nationwide shipping in Bangladesh.",
+      "Shop genuine frames & sunglasses at Nijumbd. Fast nationwide shipping in Bangladesh.",
     url: siteUrl,
-    siteName: "Suyeb Online Sports",
+    siteName: "Nijumbd",
     locale: "en_US",
     alternateLocale: ["bn_BD"],
     type: "website",
@@ -93,10 +91,10 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Suyeb Online Sports | Premium Sports Gear & Apparel",
+    title: "Nijumbd | Premium frames & sunglasses",
     description:
-      "Discover authentic sports gear, custom jerseys, cricket bats, football accessories, and athletic wear at Suyeb Online Sports.",
-    creator: "@suyebsports",
+      "Discover authentic frames & sunglasses at Nijumbd.",
+    creator: "@Nijumbd",
     images: ["/og-image.png"],
   },
   robots: {
